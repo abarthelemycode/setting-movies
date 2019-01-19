@@ -1,0 +1,61 @@
+
+
+.multiselect {
+  margin-top:2rem;
+  margin-bottom:2rem;
+}
+
+.pagination {
+  margin-bottom:1rem;
+}
+
+.btn-nbelement{
+  opacity:0.5;
+
+  &-active {
+    opacity:1
+  }
+}
+
+
+.movie-card {
+  width:15rem;
+  margin:1rem;
+
+  .card-title{
+    font-weight: bold;
+    font-size:1rem;
+    margin-bottom:1rem;
+    min-height:2rem;
+  }
+  .card-subtitle{
+    margin-bottom:1rem;
+  }
+
+  .text-like {
+    margin-left:1rem;
+    margin-right:1rem;
+  }
+
+  .like-icon {
+    cursor:pointer;
+    opacity: .7;
+
+    &:focus, &:active, &:hover {
+      opacity: 1;
+    }
+  }
+
+  .delete-button {
+    margin-top:-0.5rem;
+    margin-right:-0.5rem;
+    width:1.5rem;
+    height:1.5rem;
+    cursor:pointer;
+    opacity: .5;
+
+    &:focus, &:active, &:hover {
+      opacity: 1;
+    }
+  }
+}
