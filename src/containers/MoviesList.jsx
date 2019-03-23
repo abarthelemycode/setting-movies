@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-import Card         from './Card'
-import MultiSelect  from './MultiSelect'
-import Pagination   from './Pagination'
+import { Card, MultiSelect, Pagination } from 'components'
 import { movies$ }  from '../data/movies'
 
 
-class Content extends Component {
+class MoviesList extends Component {
 
   constructor(){
     super()
@@ -74,7 +72,7 @@ class Content extends Component {
   }
 
   displayCard = item => {
-    return (<Card key={ item.id } movie={ item } deleteCard={this.deleteCard}></Card>)
+    return (<Card key={ item.id } movie={ item } deleteCard={this.deleteCard} />)
   }
 
   render() {
@@ -94,8 +92,8 @@ class Content extends Component {
 
     return (
       <div className="container">
-        <MultiSelect stateSelect={ stateSelect } updateState={this.updateState} ></MultiSelect>
-        <Pagination statePage={ statePage } updateState={this.updateState}></Pagination>
+        <MultiSelect stateSelect={ stateSelect } updateState={this.updateState} />
+        <Pagination statePage={ statePage } updateState={this.updateState} />
 
         <div className="row mx-auto">
           {listCard}
@@ -105,4 +103,4 @@ class Content extends Component {
   }
 }
 
-export default Content;
+export default MoviesList;
